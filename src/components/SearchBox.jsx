@@ -1,9 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { BsSearch, BsMicFill } from "react-icons/bs";
 import Button from './Button';
+import { useNavigate } from 'react-router-dom'
+import { BsSearch, BsMicFill } from "react-icons/bs";
 
 const SearchBox = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/searchList`);
+    }
+
     var category = [
         "Buy", "Rent", "PG", "Commercial", "Plot/Land"
     ];
@@ -22,7 +29,7 @@ const SearchBox = () => {
                 </div>
                 <div className='flex items-center justify-end gap-2 basis-[48%]'>
                     <BsMicFill />
-                    <Button component={"contact"} title="search" type={"tertiary"} />
+                    <Button handleClick={handleClick} component={"contact"} title="search" type={"tertiary"} />
                 </div>
             </div>
         </div>
