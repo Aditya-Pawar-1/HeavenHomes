@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AboutDataContext } from "../utils/context/AboutContext";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -6,8 +6,11 @@ import Info from "./Info";
 import BackgroundImg from "../assets/images/BackgroundImg.jpg";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [item] = useContext(AboutDataContext);
-  // console.log(item);
   return (
     <div>
       <Navbar />

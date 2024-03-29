@@ -7,7 +7,7 @@ import HeroImg from "../assets/images/HeroImg.jpg";
 const Hero = () => {
   const navigate = useNavigate();
   const handleClick = (component) => {
-    console.log(component); //
+    console.log(component);
     navigate(`${"/" + component}`);
   }
   return (
