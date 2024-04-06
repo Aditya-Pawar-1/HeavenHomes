@@ -6,9 +6,9 @@ import SearchCards from './SearchCards'
 
 const Search = () => {
   const [images, setImages] = useState([
-    "/HeavenHomes/public/Img2.jpg",
-    "/HeavenHomes/public/Img2.jpg",
-    "/HeavenHomes/public/Img2.jpg",
+    "./HeavenHomes/public/Img2.jpg",
+    "./HeavenHomes/public/Img2.jpg",
+    "./HeavenHomes/public/Img2.jpg",
   ])
 
   return (
